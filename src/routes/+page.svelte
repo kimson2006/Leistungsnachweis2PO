@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  /* Grundlegender Stil für den gesamten Body */
+  /* Basic styles for the entire body */
 
   .container {
     max-width: 1200px;
@@ -13,13 +13,13 @@
 
   h1 {
     font-size: 3.5rem;
-    color: #1E90FF; /* Blau für die Hauptüberschrift */
+    color: #1E90FF; /* Blue for the main heading */
     margin-bottom: 20px;
   }
 
   p {
     font-size: 1.4rem;
-    color: #dcdcdc; /* Helles Grau für den Text */
+    color: #dcdcdc; /* Light gray for the text */
     margin-bottom: 40px;
   }
 
@@ -32,7 +32,7 @@
   }
 
   .link-item {
-    background-color: #1E90FF; /* Blau für die Schaltflächen */
+    background-color: #1E90FF; /* Blue for the buttons */
     color: white;
     text-decoration: none;
     padding: 20px 30px;
@@ -45,7 +45,7 @@
   }
 
   .link-item:hover {
-    background-color: #4682B4; /* Dunkleres Blau für den Hover-Effekt */
+    background-color: #4682B4; /* Darker blue for the hover effect */
     transform: translateY(-5px);
   }
 
@@ -80,7 +80,7 @@
 
   .image-section .text h2 {
     font-size: 2.5rem;
-    color: #1E90FF; /* Blau für die Überschrift */
+    color: #1E90FF; /* Blue for the heading */
     margin-bottom: 20px;
   }
 
@@ -103,35 +103,35 @@
   }
 
   .cta-button:hover {
-    background-color: #4682B4; /* Dunkleres Blau für den Hover-Effekt */
+    background-color: #4682B4; /* Darker blue for the hover effect */
   }
 </style>
 
 <div class="container">
-  <h1>Willkommen in der Welt der Kryptowährungen!</h1>
-  <p>Erkunde die neuesten Informationen und Trends zu Kryptowährungen und bleibe immer auf dem Laufenden.</p>
+  <h1>Welcome to the World of Cryptocurrencies!</h1>
+  <p>Explore the latest information and trends about cryptocurrencies and stay up to date.</p>
 
   <div class="link-list">
     <a href="/cryptocurrencies" class="link-item">
-      Alle Kryptowährungen anschauen
+      View All Cryptocurrencies
     </a>
     <a href="/cryptocurrencies/create" class="link-item">
-      Kryptowährungen hinzufügen
+      Add a Cryptocurrency
     </a>
     <a href="/portfolio" class="link-item">
-      Portfolio anschauen
+      View Portfolio
     </a>
     <a href="/portfolio/create" class="link-item">
-      Portfolio erstellen
+      Create a Portfolio
     </a>
   </div>
 
   <div class="image-section">
     <div class="text">
-      <h2>Was sind Kryptowährungen?</h2>
-      <p>Kryptowährungen sind digitale Währungen, die auf der Blockchain-Technologie basieren. Sie bieten eine dezentrale Möglichkeit zur Durchführung von Transaktionen ohne die Notwendigkeit von Banken oder zentralen Instanzen. Entdecke, wie diese innovative Technologie die Finanzwelt revolutioniert!</p>
-      <a href="/cryptocurrencies" class="cta-button">Mehr erfahren</a>
+      <h2>What Are Cryptocurrencies?</h2>
+      <p>Cryptocurrencies are digital currencies based on blockchain technology. They offer a decentralized way to perform transactions without the need for banks or central authorities. Discover how this innovative technology is revolutionizing the financial world!</p>
+      <a href="/cryptocurrencies" class="cta-button">Learn More</a>
     </div>
-    <img src="/images/cryptocurrency-banner.png" alt="Kryptowährungen" />
+    <img src="/images/cryptocurrency-banner.png" alt="Cryptocurrencies" />
   </div>
 </div>
