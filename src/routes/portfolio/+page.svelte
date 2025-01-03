@@ -4,8 +4,8 @@
 
 <main class="container mt-5">
   <div class="portfolio-header text-center mb-4">
-    <h1 class="display-4 text-white">📊 Portfolio Übersicht</h1>
-    <p class="text-light">Verwalten Sie Ihre Kryptowährungsportfolios mit Leichtigkeit</p>
+    <h1 class="display-4 text-white">📊 Portfolio Overview</h1>
+    <p class="text-light">Manage your cryptocurrency portfolios with ease</p>
   </div>
 
   <!-- Create Portfolio Button -->

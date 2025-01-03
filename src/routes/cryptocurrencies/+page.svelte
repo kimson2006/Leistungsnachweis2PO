@@ -15,7 +15,7 @@
     });
   </script>
   
-  <p><i>Daten und Bilder generiert mit ChatGPT</i></p>
+  <p><i>Data and images generated with ChatGPT</i></p>
   <div>
     <a href="/cryptocurrencies/create" class="btn btn-primary">Add New Cryptocurrency</a>
   </div>
