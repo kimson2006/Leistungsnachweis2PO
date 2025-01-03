@@ -49,8 +49,6 @@ async function getCryptos() {
 }
 
 // Get cryptocurrency by id
-import { ObjectId } from "mongodb";
-
 export async function getCrypto(id) {
   await ensureDbConnection();
   const collection = db.collection("cryptocurrencies");
