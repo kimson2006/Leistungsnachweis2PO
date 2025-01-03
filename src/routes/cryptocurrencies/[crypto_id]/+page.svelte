@@ -2,12 +2,12 @@
   export let data;
 
   if (!data || !data.crypto) {
-    console.error("Kryptowährung nicht gefunden!");
-    throw new Error("Keine Daten für diese Kryptowährung verfügbar.");
+    console.error("Cryptocurrency not found!");
+    throw new Error("No data available for this cryptocurrency.");
   }
 </script>
 
-<a href="/cryptocurrencies" class="btn btn-secondary">Zurück</a>
+<a href="/cryptocurrencies" class="btn btn-secondary">Back</a>
 <h1>{data.crypto.name} ({data.crypto.symbol})</h1>
 
 <div class="crypto-detail">
@@ -18,13 +18,13 @@
     onerror={(event) => (event.target.src = "/images/default.png")}
   />
   <div class="details">
-    <p><strong>Preis:</strong> ${data.crypto.price?.toFixed(2) ?? "N/A"}</p>
-    <p><strong>Marktkapitalisierung:</strong> ${data.crypto.marketCap?.toLocaleString()} USD</p>
-    <p><strong>Änderung (24h):</strong> {data.crypto.percentChange24h ?? "N/A"}%</p>
-    <p><strong>Beschreibung:</strong> {data.crypto.description ?? "Keine Beschreibung verfügbar."}</p>
+    <p><strong>Price:</strong> ${data.crypto.price?.toFixed(2) ?? "N/A"}</p>
+    <p><strong>Market Cap:</strong> ${data.crypto.marketCap?.toLocaleString()} USD</p>
+    <p><strong>Change (24h):</strong> {data.crypto.percentChange24h ?? "N/A"}%</p>
+    <p><strong>Description:</strong> {data.crypto.description ?? "No description available."}</p>
     <form method="POST" action="?/delete">
       <input type="hidden" name="id" value={data.crypto._id}>
-      <button class="btn btn-danger">Kryptowährung löschen</button>
+      <button class="btn btn-danger">Delete Cryptocurrency</button>
     </form>
   </div>
 </div>

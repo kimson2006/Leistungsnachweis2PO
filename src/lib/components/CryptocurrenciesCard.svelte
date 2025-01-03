@@ -12,13 +12,13 @@
       });
 
       if (response.ok) {
-        // Status lokal umschalten, basierend auf erfolgreicher Anfrage
+        // Toggle status locally based on successful request
         crypto.watchlist = !crypto.watchlist;
       } else {
-        console.error("Fehler bei der Anfrage:", response.statusText);
+        console.error("Error in request:", response.statusText);
       }
     } catch (error) {
-      console.error("Fehler beim Aktualisieren der Watchlist:", error);
+      console.error("Error updating watchlist:", error);
     }
   }
 </script>
@@ -31,13 +31,13 @@
       alt={crypto.name}
       onerror={(e) => (e.target.src = "/images/default.png")}
     />
-    <!-- Name als Link zur Detailansicht -->
+    <!-- Name as link to the detail view -->
     <h3>
       <a href={`/cryptocurrencies/${crypto._id}`}>{crypto.name} ({crypto.symbol})</a>
     </h3>
-    <p>Preis: ${crypto.price?.toFixed(2) ?? 'N/A'}</p>
-    <p>Marktkapitalisierung: ${crypto.marketCap?.toLocaleString() ?? 'N/A'} USD</p>
-    <p>Jahr: {crypto.year}</p>
+    <p>Price: ${crypto.price?.toFixed(2) ?? 'N/A'}</p>
+    <p>Market Cap: ${crypto.marketCap?.toLocaleString() ?? 'N/A'} USD</p>
+    <p>Year: {crypto.year}</p>
   </div>
 
   <div class="actions">
@@ -45,7 +45,7 @@
       class={crypto.watchlist ? "btn btn-danger" : "btn btn-success"}
       onclick={toggleWatchlist}
     >
-      {crypto.watchlist ? "Von Watchlist entfernen" : "Auf die Watchlist"}
+      {crypto.watchlist ? "Remove from Watchlist" : "Add to Watchlist"}
     </button>
   </div>
 </div>
