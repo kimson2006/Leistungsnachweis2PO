@@ -73,14 +73,18 @@ export async function updateCryptoStatus(id, status) {
 }
 
 // Delete cryptocurrency by id
-async function deleteCrypto(id) {
-  await ensureDbConnection();
-  const collection = db.collection("cryptocurrencies");
-  const query = { _id: new ObjectId(id) };
-  const result = await collection.deleteOne(query);
-  return result;
-}
+export async function deleteCrypto(id) {
+    await ensureDbConnection();
+    const collection = db.collection("cryptocurrencies");
 
+    try {
+        const result = await collection.deleteOne({ _id: new ObjectId(id) }); // Delete document by ID
+        return result;
+    } catch (error) {
+        console.error("Error deleting from database:", error);
+        throw error;
+    }
+}
 //////////////////////////////////////////
 // Portfolios
 //////////////////////////////////////////

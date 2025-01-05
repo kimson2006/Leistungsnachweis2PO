@@ -1,5 +1,5 @@
 <script>
-    let { form } = $props();
+  let { form } = $props();
 </script>
 
 <a href="/cryptocurrencies">Back</a>
@@ -33,9 +33,20 @@
   <label for="watchlist" class="form-label">Add to Watchlist</label>
   <input type="checkbox" id="watchlist" name="watchlist" value="true">
 </div>
+<!-- New Input Field for Description -->
+<div class="mb-3">
+  <label for="description" class="form-label">Description</label>
+  <textarea
+    class="form-control"
+    id="description"
+    name="description"
+    rows="4"
+    placeholder="Enter a description for the cryptocurrency"
+  ></textarea>
+</div>
 <button type="submit" class="btn btn-primary">Add Cryptocurrency</button>
 </form>
 
 {#if form?.success}
-    <p>Cryptocurrency created</p>
+  <p>Cryptocurrency created</p>
 {/if}

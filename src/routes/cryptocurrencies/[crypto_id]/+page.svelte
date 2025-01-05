@@ -22,10 +22,10 @@
     <p><strong>Market Cap:</strong> ${data.crypto.marketCap?.toLocaleString()} USD</p>
     <p><strong>Change (24h):</strong> {data.crypto.percentChange24h ?? "N/A"}%</p>
     <p><strong>Description:</strong> {data.crypto.description ?? "No description available."}</p>
-    <form method="POST" action="?/delete">
-      <input type="hidden" name="id" value={data.crypto._id}>
-      <button class="btn btn-danger">Delete Cryptocurrency</button>
-    </form>
+    <form method="POST" action="/cryptocurrencies/delete">
+      <input type="hidden" name="id" value={data.crypto._id} />
+      <button type="submit" class="btn btn-danger">Delete Cryptocurrency</button>
+  </form>  
   </div>
 </div>
 
