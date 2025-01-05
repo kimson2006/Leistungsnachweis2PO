@@ -60,8 +60,21 @@
           required
         />
       </div>
+      <!-- Neue Eingabezeile für Beschreibung -->
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea
+          class="form-control"
+          id="description"
+          name="description"
+          rows="4"
+          placeholder="Enter a description for your portfolio"
+          required
+        ></textarea>
+      </div>
       <button type="submit" class="btn btn-primary">Create Portfolio</button>
     </form>
+    
   </main>
   
   <style>

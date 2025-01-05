@@ -5,6 +5,7 @@ export const actions = {
     const formData = await request.formData();
     const name = formData.get("name");
     const walletAddress = formData.get("walletAddress");
+    const description = formData.get("description"); // Neue Zeile für die Beschreibung
 
     const db = await connectToDatabase();
 
@@ -12,6 +13,7 @@ export const actions = {
       const result = await db.collection("portfolio").insertOne({
         name,
         walletAddress,
+        description, // Beschreibung hinzufügen
         portfolio: [], // Initialize holdings as an empty array
         createdAt: new Date(),
       });
@@ -27,3 +29,4 @@ export const actions = {
     }    
   },
 };
+
