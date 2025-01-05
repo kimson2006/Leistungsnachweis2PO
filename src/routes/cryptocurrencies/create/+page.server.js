@@ -11,15 +11,16 @@ export const actions = {
             price: parseFloat(formData.get('price')),
             marketCap: parseFloat(formData.get('marketCap')),
             poster: formData.get('poster') || '/images/placeholder.png',
-            watchlist: formData.get('watchlist') === 'true'
+            watchlist: formData.get('watchlist') === 'true',
+            description: formData.get('description') || 'No description provided.' 
         };
 
         try {
             await db.createCrypto(newCrypto);
             return { success: true };
         } catch (error) {
-            console.error('Fehler beim Erstellen der Kryptowährung:', error);
-            return { error: 'Fehler beim Erstellen der Kryptowährung.' };
+            console.error('Error creating cryptocurrency:', error);
+            return { error: 'Error creating cryptocurrency.' };
         }
     }
 };
