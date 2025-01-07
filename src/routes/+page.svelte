@@ -1,9 +1,8 @@
 <script>
-  // You can add interactivity here if needed
+
 </script>
 
 <style>
-  /* Basic styles for the entire body */
 
   .container {
     max-width: 1200px;

@@ -11,7 +11,7 @@ export async function load() {
       _id: portfolio._id.toString(),
       name: portfolio.name,
       walletAddress: portfolio.walletAddress,
-      currentValue: portfolio.currentValue || 0, // Ensure currentValue is included and defaults to 0 if undefined
+      //currentValue: portfolio.currentValue || 0
     })),
   };
 }
